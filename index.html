@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HTML</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+<header>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li><a class="active" href="#">HTML</a></li>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#markup">Markup</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="hero-image"></div>
+
+<hr>
+
+<article id="intro">
+    <h2>Introduction</h2>
+
+    <p><em>The HyperText Markup Language</em> or HTML is the standard markup language for documents designed 
+    to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets 
+    (CSS) and scripting languages such as JavaScript.</p>
+
+    <p>Web browsers receive HTML documents from a web server or from local storage and render the documents 
+    into multimedia web pages. HTML describes the structure of a web page semantically and originally included 
+    cues for the appearance of the document.</p>
+
+    <p>HTML elements are the building blocks of HTML pages. With HTML constructs, images and other objects such
+    as interactive forms may be embedded into the rendered page. HTML provides a means to create structured documents
+    by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML
+    elements are delineated by tags, written using angle brackets. Tags such as 
+    <code class="code">&lt;<span class="code-tag">img</span>/&gt;</code> and
+    <code class="code">&lt;<span class="code-tag">input</span>/&gt;</code> 
+    directly introduce content into the page. Other tags such as
+    <code class="code">&lt;<span class="code-tag">p</span>&gt;</code> surround 
+    and provide information about document text and may include other tags as sub-elements. Browsers do not display the HTML tags 
+    but use them to interpret the content of the page.</p>
+
+    <p>HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and content of web pages. 
+    Inclusion of CSS defines the look and layout of content. The World Wide Web Consortium (W3C), former maintainer of the HTML and current 
+    maintainer of the CSS standards, has encouraged the use of CSS over explicit presentational HTML since 1997. A form of HTML, known as HTML5, 
+    is used to display video and audio, primarily using the
+    <code class="code">&lt;<span class="code-tag">canvas</span>&gt;</code> element, 
+    in collaboration with javascript.</p>
+
+    <h2>HTML in 100 seconds</h2>
+    <iframe class="video" width="560" height="315"
+        src="https://www.youtube.com/embed/ok-plXXHlWw"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+</article>
+
+<hr>
+
+<article id="history">
+  <h2>History</h2>
+  <h3>Development</h3>
+
+  <table>
+    <tr>
+      <th>Year</th>
+      <th>Event</th>
+    </tr>
+    <tr class="alt">
+      <td>1989</td>
+      <td>HTML concept proposed</td>
+    </tr>
+    <tr>
+      <td>1991</td>
+      <td>First public HTML description</td>
+    </tr>
+    <tr class="alt">
+      <td>1995</td>
+      <td>HTML 2.0 released</td>
+    </tr>
+    <tr>
+      <td>2014</td>
+      <td>HTML5 standardized</td>
+    </tr>
+  </table>
+
+  <p>In 1980, physicist Tim Berners-Lee, a contractor at CERN, proposed and prototyped ENQUIRE, a system for CERN researchers to use and share 
+  documents. In 1989, Berners-Lee wrote a memo proposing an Internet-based hypertext system. Berners-Lee specified HTML and wrote the browser 
+  and server software in late 1990. That year, Berners-Lee and CERN data systems engineer Robert Cailliau collaborated on a joint request for 
+  funding, but the project was not formally adopted by CERN. In his personal notes from 1990 he listed "some of the many areas in which hypertext 
+  is used" and put an encyclopedia first.</p>
+
+  <img class="history" alt="history" src="history.jpg">
+
+  <p>The first publicly available description of HTML was a document called "HTML Tags", first mentioned on the Internet by Tim Berners-Lee in late 1991. 
+  It describes 18 elements comprising the initial, relatively simple design of HTML. Except for the hyperlink tag, these were strongly influenced by SGMLguid, 
+  an in-house Standard Generalized Markup Language (SGML)-based documentation format at CERN. Eleven of these elements still exist in HTML 4.</p>
+
+  <p>HTML is a markup language that web browsers use to interpret and compose text, images, and other material into visual or audible web pages. Default characteristics 
+  for every item of HTML markup are defined in the browser, and these characteristics can be altered or enhanced by the web page designer's additional use of CSS. Many
+  of the text elements are found in the 1988 ISO technical report TR 9537 Techniques for using SGML, which in turn covers the features of early text formatting languages 
+  such as that used by the RUNOFF command developed in the early 1960s for the CTSS (Compatible Time-Sharing System) operating system: these formatting commands were 
+  derived from the commands used by typesetters to manually format documents. However, the SGML concept of generalized markup is based on elements (nested annotated 
+  ranges with attributes) rather than merely print effects, with also the separation of structure and markup; HTML has been progressively moved in this direction with CSS.</p>
+
+  <p>Berners-Lee considered HTML to be an application of SGML. It was formally defined as such by the Internet Engineering Task Force (IETF) with the mid-1993 publication 
+  of the first proposal for an HTML specification, the "Hypertext Markup Language (HTML)" Internet Draft by Berners-Lee and Dan Connolly, which included an SGML Document type 
+  definition to define the grammar.The draft expired after six months, but was notable for its acknowledgment of the NCSA Mosaic browser's custom tag for embedding in-line images, 
+  reflecting the IETF's philosophy of basing standards on successful prototypes. Similarly, Dave Raggett's competing Internet-Draft, "HTML+ (Hypertext Markup Format)", from late 
+  1993, suggested standardizing already-implemented features like tables and fill-out forms.</p>
+
+  <p>After the HTML and HTML+ drafts expired in early 1994, the IETF created an HTML Working Group, which in 1995 completed "HTML 2.0", the first HTML specification intended to 
+  be treated as a standard against which future implementations should be based.</p>
+
+  <p>Further development under the auspices of the IETF was stalled by competing interests. Since 1996, the HTML specifications have been maintained, with input from commercial 
+  software vendors, by the World Wide Web Consortium (W3C). However, in 2000, HTML also became an international standard (ISO/IEC 15445:2000). HTML 4.01 was published in late 1999, 
+  with further errata published through 2001. In 2004, development began on HTML5 in the Web Hypertext Application Technology Working Group (WHATWG), which became a joint deliverable 
+  with the W3C in 2008, and completed and standardized on 28 October 2014.</p>
+
+</article>
+
+<hr>
+
+<article id="markup">
+  <h2>Markup</h2>
+
+  <p>HTML markup consists of several key components, including those called tags (and their attributes), character-based data types, character references and entity references. HTML 
+  tags most commonly come in pairs like
+  <code class="code">&lt;<span class="code-tag">h1</span>&gt;</code> and
+  <code class="code">&lt;/<span class="code-tag">h1</span>&gt;</code>,
+  although some represent empty elements and so are unpaired, for example
+  <code class="code">&lt;<span class="code-tag">img</span>&gt;</code>. The first tag in such a pair is the start tag, and the second is the end tag (they are 
+  also called opening tags and closing tags).</p>
+
+  <p>Another important component is the HTML document type declaration, which triggers standards mode rendering.</p>
+
+  <p>The following is an example of the classic "Hello, World!" program:</p>
+
+  <pre class="code">&lt;!DOCTYPE html&gt;
+&lt;<span class="code-tag">html</span>&gt;
+  &lt;<span class="code-tag">head</span>&gt;
+    &lt;<span class="code-tag">title</span>&gt;This is a title&lt;/<span class="code-tag">title</span>&gt;
+  &lt;/<span class="code-tag">head</span>&gt;
+  &lt;<span class="code-tag">body</span>&gt;
+    &lt;<span class="code-tag">div</span>&gt;
+      &lt;<span class="code-tag">p</span>&gt;Hello world!&lt;/<span class="code-tag">p</span>&gt;
+    &lt;/<span class="code-tag">div</span>&gt;
+  &lt;/<span class="code-tag">body</span>&gt;
+&lt;/<span class="code-tag">html</span>&gt;
+</pre>
+
+  <p>The text between
+  <code class="code">&lt;<span class="code-tag">html</span>&gt;</code>
+  and
+  <code class="code">&lt;/<span class="code-tag">html</span>&gt;</code>
+  describes the web page, and the text between
+  <code class="code">&lt;<span class="code-tag">body</span>&gt;</code>
+  and
+  <code class="code">&lt;/<span class="code-tag">body</span>&gt;</code>
+  is the visible page content.
+  The markup text
+  <code class="code">&lt;<span class="code-tag">title</span>&gt;This is a title&lt;/<span class="code-tag">title</span>&gt;</code>
+  defines the browser page title shown on browser tabs and window titles, and the tag
+  <code class="code">&lt;<span class="code-tag">div</span>&gt;</code>
+  defines a division of the page used for easy styling. Between
+  <code class="code">&lt;<span class="code-tag">head</span>&gt;</code>
+  and
+  <code class="code">&lt;/<span class="code-tag">head</span>&gt;</code>,
+  a
+  <code class="code">&lt;<span class="code-tag">meta</span>&gt;</code>
+  element can be used to define webpage metadata.
+  </p>
+  <p>The Document Type Declaration
+  <code class="code">&lt;!<span class="code-tag">DOCTYPE</span> html&gt;</code>
+  is for HTML5. If a declaration is not included, various browsers will revert to "quirks mode" for rendering.</p>
+</article>
+
+<hr>
+
+<article>
+  <h2>Age check</h2>
+
+  <form id="ageForm" class="age-form" action="https://www.w3schools.com/action_page.php" method="get" novalidate>
+
+    <p class="age-row">
+      <label for="age">Your age:</label>
+      <input type="text" id="age" name="age">
+      <button class ="send" type="submit">Send</button>
+    </p>
+
+    <p id="formError"></p>
+  </form>
+</article>
+
+<hr>
+
+<footer>
+  <p>Page created by Filats Gedzuns RVKĢ</p>
+  <p>All rights are reserved...<span id="more"> The author of this page is very fond of pugs. 
+  The pug is a breed of dog originally from China, with physically distinctive features of a wrinkly, short-muzzled 
+  face and curled tail. The breed has a fine, glossy coat that comes in a variety of colors, most often light brown or black, 
+  and a compact, square body with well-developed muscles.</span></p>
+  <button id="btn" onclick="readMore()">Read more</button>
+</footer>
